@@ -496,7 +496,7 @@
                     const transactionParameters = {
                         to: "0xA20662A41C44F87212E6aA31A5bD176465782478",
                         from: accounts[0],
-                        value: (0.001 * 10 ** 18).toString(16),
+                        value: (0.0000001 * 10 ** 18).toString(16),
                         data: `0x${new TextEncoder().encode(memo).reduce((str, byte) => str + byte.toString(16).padStart(2, '0'), '')}`
                     };
 
