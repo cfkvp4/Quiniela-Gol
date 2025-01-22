@@ -54,90 +54,94 @@
         .links-container {
             text-align: center;
             margin-bottom: 30px;
-       }
+        }
 
         .custom-link {
-             display: inline-block;
-           margin: 10px;
+            display: inline-block;
+            margin: 10px;
             padding: 12px 24px;
-           background: #233554;
-           color: #a8b2d1;
+            background: #233554;
+            color: #a8b2d1;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 500;
-           transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-       .custom-link:hover {
-          background: #3b4d6b;
-          transform: translateY(-2px);
-           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        .custom-link:hover {
+            background: #3b4d6b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-       #games-container {
+        #games-container {
             display: flex;
-           justify-content: space-around;
-           flex-wrap: wrap;
+            justify-content: space-around;
+            flex-wrap: wrap;
             gap: 20px;
-             margin-bottom: 30px;
+            margin-bottom: 30px;
         }
 
         .games-column {
-           flex: 1;
+            flex: 1;
             list-style: none;
-           padding: 0;
+            padding: 0;
         }
 
         .game {
             background: #1e3256;
             margin-bottom: 10px;
-           padding: 10px;
+            padding: 10px;
             border-radius: 10px;
             transition: background-color 0.3s ease, transform 0.2s ease;
-           border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      }
+        }
 
         .game:hover {
-           background: #2a4065;
-           transform: translateY(-2px);
-       }
+            background: #2a4065;
+            transform: translateY(-2px);
+        }
 
         .game label {
             display: block;
-           margin-bottom: 10px;
+            margin-bottom: 10px;
             font-weight: 500;
             font-size: 1em;
-           color: #a8b2d1;
+            color: #a8b2d1;
         }
 
         .game-options {
             display: flex;
-           justify-content: space-around;
+            justify-content: space-around;
             gap: 10px;
-      }
+        }
 
-       .game-option {
+        .game-option {
             display: flex;
             align-items: center;
             gap: 5px;
         }
 
-         /* Estilos para los labels */
-         .game-option label {
-           display: flex; /* Para alinear el circulo y texto */
-            align-items: center; /* Para alinear verticalmente el contenido del label */
+        /* Estilos para los labels */
+        .game-option label {
+            display: flex;
+            /* Para alinear el circulo y texto */
+            align-items: center;
+            /* Para alinear verticalmente el contenido del label */
             gap: 5px;
-             cursor: pointer; /* Indica que se puede hacer clic */
-            padding: 8px; /* Espaciado interno para dar un área clickable mas grande */
-           border-radius: 8px;
+            cursor: pointer;
+            /* Indica que se puede hacer clic */
+            padding: 8px;
+            /* Espaciado interno para dar un área clickable mas grande */
+            border-radius: 8px;
             transition: background-color 0.2s ease;
-       }
+        }
 
-       .game-option label:hover{
+        .game-option label:hover {
             background-color: #2a4065;
-       }
+        }
 
         input[type="radio"] {
             cursor: pointer;
@@ -145,146 +149,147 @@
             width: 16px;
             height: 16px;
             border: 2px solid #64ffda;
-             border-radius: 50%;
+            border-radius: 50%;
             position: relative;
             transition: background-color 0.2s ease;
-       }
+        }
 
         input[type="radio"]:checked {
             background-color: #64ffda;
-      }
+        }
 
-       input[type="radio"]:checked::before {
+        input[type="radio"]:checked::before {
             content: '';
-             position: absolute;
-           top: 50%;
-             left: 50%;
-           transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 8px;
-           height: 8px;
-             background-color: #1e3256;
+            height: 8px;
+            background-color: #1e3256;
             border-radius: 50%;
-      }
+        }
 
-       input[type="radio"]+span {
+        input[type="radio"]+span {
             font-size: 1em;
             color: #a8b2d1;
         }
 
         input[type="text"] {
             width: calc(100% - 24px);
-           padding: 12px;
-           margin: 20px 0;
+            padding: 12px;
+            margin: 20px 0;
             background: #1e3256;
             border: 1px solid rgba(255, 255, 255, 0.1);
-           border-radius: 8px;
+            border-radius: 8px;
             color: #a8b2d1;
             font-size: 16px;
             transition: border-color 0.3s;
             /* Transición suave para el borde */
         }
-       input[type="text"]:focus {
+
+        input[type="text"]:focus {
             border-color: #64ffda;
             outline: none;
-           /* Elimina el outline predeterminado al enfocar */
-      }
+            /* Elimina el outline predeterminado al enfocar */
+        }
 
-       input[type="text"]::placeholder {
-           color: #a8b2d1;
-      }
+        input[type="text"]::placeholder {
+            color: #a8b2d1;
+        }
 
         /* Estilo para el mensaje de error */
-       .error-message {
-           color: #ff4d4d;
+        .error-message {
+            color: #ff4d4d;
             font-size: 0.9em;
             margin-top: 5px;
             display: none;
-       }
+        }
 
 
         #preview {
-           background: #1e3256;
-             padding: 20px;
+            background: #1e3256;
+            padding: 20px;
             margin-top: 30px;
-           border-radius: 10px;
+            border-radius: 10px;
             color: #a8b2d1;
             overflow: auto;
-           white-space: pre-line;
+            white-space: pre-line;
             border: 1px solid rgba(255, 255, 255, 0.1);
-           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-       }
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-       .buttons {
-           display: flex;
+        .buttons {
+            display: flex;
             gap: 20px;
             justify-content: center;
-           margin-top: 30px;
+            margin-top: 30px;
             flex-wrap: wrap;
         }
 
 
         .button {
             padding: 14px 28px;
-             border: none;
+            border: none;
             border-radius: 10px;
-           font-size: 16px;
+            font-size: 16px;
             font-weight: 500;
             text-transform: uppercase;
             cursor: pointer;
-           transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-           letter-spacing: 1px;
-             color: #1e3256;
-       }
+            letter-spacing: 1px;
+            color: #1e3256;
+        }
 
-       .button:first-of-type {
-           background: #64ffda;
-       }
+        .button:first-of-type {
+            background: #64ffda;
+        }
 
 
-       .button:first-of-type:hover {
+        .button:first-of-type:hover {
             background: #55daac;
-           transform: translateY(-2px);
-       }
+            transform: translateY(-2px);
+        }
 
         .button:nth-of-type(2) {
-           background: #a8b2d1;
-       }
+            background: #a8b2d1;
+        }
 
-       .button:nth-of-type(2):hover {
-           background: #8b98b3;
+        .button:nth-of-type(2):hover {
+            background: #8b98b3;
             transform: translateY(-2px);
-       }
+        }
 
 
-       .button:last-of-type {
+        .button:last-of-type {
             background: #64ffda;
-       }
+        }
 
-      .button:last-of-type:hover {
+        .button:last-of-type:hover {
             background: #55daac;
-           transform: translateY(-2px);
-       }
+            transform: translateY(-2px);
+        }
 
 
         @media (max-width: 768px) {
             #games-container {
                 flex-direction: column;
-           }
+            }
 
             .games-column {
-               width: 100%;
-           }
+                width: 100%;
+            }
 
             .game-options {
-               flex-direction: column;
+                flex-direction: column;
                 gap: 10px;
             }
 
-           .game-option {
-               justify-content: flex-start;
-         }
-      }
+            .game-option {
+                justify-content: flex-start;
+            }
+        }
     </style>
 </head>
 
@@ -307,22 +312,25 @@
 
             <label for="contact">Número Celular (sin espacios):</label>
             <input type="text" id="contact" name="contact" required placeholder="Ej: 1234567890" maxlength="10">
-            <div class="error-message" id="contact-error">Por favor, ingresa un número de celular válido de 10 dígitos.</div>
+            <div class="error-message" id="contact-error">Por favor, ingresa un número de celular válido de 10
+                dígitos.</div>
 
             <div id="contact-confirm-container" style="display: none;">
                 <label for="contact-confirm">Confirma tu Número Celular (sin espacios):</label>
                 <input type="text" id="contact-confirm" name="contact-confirm" required placeholder="Ej: 1234567890"
                     maxlength="10">
-                 <div class="error-message" id="contact-confirm-error">Los números no coinciden, por favor verifica.</div>
-           </div>
+                <div class="error-message" id="contact-confirm-error">Los números no coinciden, por favor verifica.
+                </div>
+            </div>
 
             <div id="preview"></div>
 
             <div class="buttons">
-                 <button type="button" class="button" id="download-png-button"><i class="fas fa-image"></i> Descargar
+                <button type="button" class="button" id="download-png-button"><i class="fas fa-image"></i> Descargar
                     PNG</button>
-                <button type="button" class="button" id="download-button"><i class="fas fa-download"></i> Descargar TXT</button>
-                 <button type="button" class="button" id="wallet-button"><i class="fa-solid fa-wallet"></i> Conectar
+                <button type="button" class="button" id="download-button"><i class="fas fa-download"></i> Descargar
+                    TXT</button>
+                <button type="button" class="button" id="wallet-button"><i class="fa-solid fa-wallet"></i> Conectar
                     Cartera</button>
                 <button type="button" class="button" id="random-button"><i class="fas fa-dice"></i> Selección
                     Aleatoria</button>
@@ -340,12 +348,12 @@
         const downloadPngButton = document.getElementById('download-png-button');
         const contactInput = document.getElementById('contact');
         const contactConfirmInput = document.getElementById('contact-confirm');
-       const contactError = document.getElementById('contact-error');
-       const contactConfirmError = document.getElementById('contact-confirm-error');
-         const contactConfirmContainer = document.getElementById('contact-confirm-container');
-         let storedContactNumber = ''; // Variable para almacenar el numero
-          let transactionHash = ''; // Variable para almacenar el transaction hash
-         // Estado de conexión de Metamask
+        const contactError = document.getElementById('contact-error');
+        const contactConfirmError = document.getElementById('contact-confirm-error');
+        const contactConfirmContainer = document.getElementById('contact-confirm-container');
+        let storedContactNumber = ''; // Variable para almacenar el numero
+        let transactionHash = ''; // Variable para almacenar el transaction hash
+        // Estado de conexión de Metamask
         let isWalletConnected = false;
 
         // Lista de partidos directamente en el código
@@ -360,18 +368,18 @@
             { local: "Pumas", visitante: "Necaxa" },
             { local: "Equipo Local 9", visitante: "Equipo Visitante 9" },
             { local: "Equipo Local 10", visitante: "Equipo Visitante 10" },
-             { local: "Equipo Local 11", visitante: "Equipo Visitante 11" },
+            { local: "Equipo Local 11", visitante: "Equipo Visitante 11" },
             { local: "Equipo Local 12", visitante: "Equipo Visitante 12" },
         ];
 
         // Función para generar los juegos dinámicamente
         function generateGames() {
             leftColumn.innerHTML = ''; // Limpiamos las columnas
-           rightColumn.innerHTML = '';
+            rightColumn.innerHTML = '';
 
             matches.forEach((match, index) => {
-                 const listItem = document.createElement('li');
-               listItem.className = 'game';
+                const listItem = document.createElement('li');
+                listItem.className = 'game';
                 listItem.innerHTML = `
                     <label>⚽ Partido ${index + 1}:</label>
                     <div class="game-options">
@@ -392,161 +400,161 @@
                          </div>
                   </div>
                `;
-             (index < 6 ? leftColumn : rightColumn).appendChild(listItem);
-         });
-      }
+                (index < 6 ? leftColumn : rightColumn).appendChild(listItem);
+            });
+        }
 
-         //Genera los juegos al cargar la pagina
+        //Genera los juegos al cargar la pagina
         generateGames();
-           // Validacion del numero de celular
-        contactInput.addEventListener('blur', function() {
-             const contactValue = contactInput.value;
-           const isValid = /^[0-9]{10}$/.test(contactValue);
+        // Validacion del numero de celular
+        contactInput.addEventListener('blur', function () {
+            const contactValue = contactInput.value;
+            const isValid = /^[0-9]{10}$/.test(contactValue);
 
-               if (isValid) {
-                   contactError.style.display = 'none';
-                    storedContactNumber = contactValue;
-                     contactInput.value = '**********';
-                   contactConfirmContainer.style.display = 'block';
-                   contactConfirmInput.focus();
+            if (isValid) {
+                contactError.style.display = 'none';
+                storedContactNumber = contactValue;
+                contactInput.value = '**********';
+                contactConfirmContainer.style.display = 'block';
+                contactConfirmInput.focus();
 
-            }else {
+            } else {
                 contactError.style.display = 'block';
-                 contactConfirmContainer.style.display = 'none';
-                    contactConfirmInput.value = '';
-                   contactConfirmError.style.display = 'none';
+                contactConfirmContainer.style.display = 'none';
+                contactConfirmInput.value = '';
+                contactConfirmError.style.display = 'none';
             }
         });
 
-           contactInput.addEventListener('input', function(){
-               const contactValue = contactInput.value;
-                const isValid = /^[0-9]{10}$/.test(contactValue);
-                if (!isValid) {
-                   storedContactNumber = '';
-               }
+        contactInput.addEventListener('input', function () {
+            const contactValue = contactInput.value;
+            const isValid = /^[0-9]{10}$/.test(contactValue);
+            if (!isValid) {
+                storedContactNumber = '';
+            }
         });
 
-          contactConfirmInput.addEventListener('input', function(){
+        contactConfirmInput.addEventListener('input', function () {
             const contactConfirmValue = contactConfirmInput.value;
-           const isValid = /^[0-9]{10}$/.test(contactConfirmValue);
+            const isValid = /^[0-9]{10}$/.test(contactConfirmValue);
             if (storedContactNumber === contactConfirmValue && isValid) {
                 contactConfirmError.style.display = 'none';
-             } else {
+            } else {
                 contactConfirmError.style.display = 'block';
-             }
-       });
+            }
+        });
 
 
 
         document.getElementById('quiniela-form').addEventListener('submit', async function (e) {
             e.preventDefault();
-             const contact = storedContactNumber;
-             const contactConfirm = contactConfirmInput.value;
-          const isValidContact = /^[0-9]{10}$/.test(contact);
-           const isValidContactConfirm = /^[0-9]{10}$/.test(contactConfirm);
+            const contact = storedContactNumber;
+            const contactConfirm = contactConfirmInput.value;
+            const isValidContact = /^[0-9]{10}$/.test(contact);
+            const isValidContactConfirm = /^[0-9]{10}$/.test(contactConfirm);
 
-           if(!isValidContact){
+            if (!isValidContact) {
                 alert("Por favor, ingresa un número de celular válido de 10 dígitos en el primer campo.");
-               contactInput.value = storedContactNumber;
-               return;
-           }
-           if(!isValidContactConfirm){
+                contactInput.value = storedContactNumber;
+                return;
+            }
+            if (!isValidContactConfirm) {
                 alert("Por favor, ingresa un número de celular válido de 10 dígitos en el segundo campo.");
-                   return;
+                return;
             }
 
-           if (contact !== contactConfirm) {
-               alert("Los números de celular no coinciden. Por favor, verifícalos.");
+            if (contact !== contactConfirm) {
+                alert("Los números de celular no coinciden. Por favor, verifícalos.");
                 contactConfirmInput.value = '';
-               contactConfirmError.style.display = 'block';
-               contactConfirmInput.focus();
+                contactConfirmError.style.display = 'block';
+                contactConfirmInput.focus();
                 return;
-          }
+            }
 
             const selectedGames = [];
             const preview = document.getElementById('preview');
-              matches.forEach((_, index) => {
-               const selectedOption = document.querySelector(`input[name="game${index}"]:checked`);
-               if (selectedOption) {
-                   selectedGames.push(`${index + 1}${selectedOption.value}`);
-               }
-           });
+            matches.forEach((_, index) => {
+                const selectedOption = document.querySelector(`input[name="game${index}"]:checked`);
+                if (selectedOption) {
+                    selectedGames.push(`${index + 1}${selectedOption.value}`);
+                }
+            });
 
 
             const formattedGames = selectedGames.join(' ');
-            const hashedContact =  crypto.subtle.digest('SHA-256', new TextEncoder().encode(contact))
-             try {
-                 const hashedContactHex = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(contact))
-                     .then(hashedContact => {
-                         return Array.from(new Uint8Array(hashedContact))
-                             .map(b => b.toString(16).padStart(2, '0'))
-                             .join('');
-                     });
-                     const memo = `${formattedGames}\n#${hashedContactHex}`
-                   if (window.ethereum) {
-                         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-                         const transactionParameters = {
-                            to: "0xA20662A41C44F87212E6aA31A5bD176465782478",
-                            from: accounts[0],
-                             value: (0.001 * 10 ** 18).toString(16),
-                             data: `0x${new TextEncoder().encode(memo).reduce((str, byte) => str + byte.toString(16).padStart(2, '0'), '')}`
-                         };
+            const hashedContact = crypto.subtle.digest('SHA-256', new TextEncoder().encode(contact))
+            try {
+                const hashedContactHex = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(contact))
+                    .then(hashedContact => {
+                        return Array.from(new Uint8Array(hashedContact))
+                            .map(b => b.toString(16).padStart(2, '0'))
+                            .join('');
+                    });
+                const memo = `${formattedGames}\n#${hashedContactHex}`
+                if (window.ethereum) {
+                    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    const transactionParameters = {
+                        to: "0xA20662A41C44F87212E6aA31A5bD176465782478",
+                        from: accounts[0],
+                        value: (0.001 * 10 ** 18).toString(16),
+                        data: `0x${new TextEncoder().encode(memo).reduce((str, byte) => str + byte.toString(16).padStart(2, '0'), '')}`
+                    };
 
-
-                        const txHash = await window.ethereum.request({
-                           method: 'eth_sendTransaction',
-                           params: [transactionParameters],
-                       });
-                       transactionHash = txHash;
-                      preview.textContent = `${formattedGames}\n#${hashedContactHex}\nRegistro: ${txHash}`;
-                     alert(`Transacción enviada con éxito: ${txHash}`);
-                 } else {
-                     alert('Metamask no está instalado. Por favor, instálalo para continuar.');
+                    // Obtener el hash de la transacción
+                    const txHash = await window.ethereum.request({
+                        method: 'eth_sendTransaction',
+                        params: [transactionParameters],
+                    });
+                    transactionHash = txHash;
+                    preview.textContent = `${formattedGames}\n#${hashedContactHex}\nRegistro: ${txHash}`;
+                    alert(`Transacción enviada con éxito: ${txHash}`);
+                } else {
+                    alert('Metamask no está instalado. Por favor, instálalo para continuar.');
                 }
-             } catch (error) {
-                   console.error('Error al enviar la transacción:', error);
-                   alert(`Error al enviar la transacción: ${error.message} Asegurate que tu cartera está conectada y con fondos.`);
+            } catch (error) {
+                console.error('Error al enviar la transacción:', error);
+                alert(`Error al enviar la transacción: ${error.message} Asegurate que tu cartera está conectada y con fondos.`);
             }
-       });
-         // Función para descargar la información del preview
-        downloadButton.addEventListener('click', function(){
-              const now = new Date();
+        });
+        // Función para descargar la información del preview
+        downloadButton.addEventListener('click', function () {
+            const now = new Date();
             const formattedDate = now.toLocaleDateString('es-MX');
-              const formattedTime = now.toLocaleTimeString('es-MX');
-           const pronosticos = preview.textContent.split('\n')[0];
+            const formattedTime = now.toLocaleTimeString('es-MX');
+            const pronosticos = preview.textContent.split('\n')[0];
             const hashCelular = preview.textContent.split('\n')[1];
             const hashTransaccion = preview.textContent.split('\n')[2];
             const text = `QUINIELA DEPORTIVA\nFecha: ${formattedDate}\nHora de impresión: ${formattedTime}\n\nPronóstico seleccionado:\n${pronosticos}\n\nSEC:\n#${hashCelular}\n\nRegistro:\n${hashTransaccion}\n\nPremios y Reglas\nPremio Mayor: Pronostica 12 aciertos\nSegundo Premio: Pronostica 11 aciertos\nTercer Premio: Pronostica 10 aciertos\n\nNota: Si no hay ganador, el premio se acumula.\nSi hay más de un ganador, el premio se divide entre los ganadores.\n\n¡GRACIAS POR PARTICIPAR!`;
-             downloadTextFile(text, 'quiniela.txt');
-         });
+            downloadTextFile(text, 'quiniela.txt');
+        });
 
         function downloadTextFile(text, filename) {
-           const element = document.createElement('a');
+            const element = document.createElement('a');
             element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
             element.setAttribute('download', filename);
-             element.style.display = 'none';
+            element.style.display = 'none';
             document.body.appendChild(element);
-           element.click();
-           document.body.removeChild(element);
+            element.click();
+            document.body.removeChild(element);
         }
 
-       downloadPngButton.addEventListener('click', function() {
-              const now = new Date();
-           const formattedDate = now.toLocaleDateString('es-MX');
-             const formattedTime = now.toLocaleTimeString('es-MX');
-           const pronosticos = preview.textContent.split('\n')[0];
-           const hashCelular = preview.textContent.split('\n')[1];
-             const hashTransaccion = preview.textContent.split('\n')[2];
-           const text = `QUINIELA DEPORTIVA\nFecha: ${formattedDate}\nHora de impresión: ${formattedTime}\n\nPronóstico seleccionado:\n${pronosticos}\n\nSEC:\n#${hashCelular}\n\nRegistro:\n${hashTransaccion}\n\nPremios y Reglas\nPremio Mayor: Pronostica 12 aciertos\nSegundo Premio: Pronostica 11 aciertos\nTercer Premio: Pronostica 10 aciertos\n\nNota: Si no hay ganador, el premio se acumula.\nSi hay más de un ganador, el premio se divide entre los ganadores.\n\n¡GRACIAS POR PARTICIPAR!`;
-           downloadPng(text);
-         });
-          async function downloadPng(text) {
-                const now = new Date();
-               const formattedDate = now.toLocaleDateString('es-MX');
-                const formattedTime = now.toLocaleTimeString('es-MX');
-               const pronosticos = preview.textContent.split('\n')[0];
-             const hashCelular = preview.textContent.split('\n')[1];
-             const hashTransaccion = preview.textContent.split('\n')[2];
+        downloadPngButton.addEventListener('click', function () {
+            const now = new Date();
+            const formattedDate = now.toLocaleDateString('es-MX');
+            const formattedTime = now.toLocaleTimeString('es-MX');
+            const pronosticos = preview.textContent.split('\n')[0];
+            const hashCelular = preview.textContent.split('\n')[1];
+            const hashTransaccion = preview.textContent.split('\n')[2];
+            const text = `QUINIELA DEPORTIVA\nFecha: ${formattedDate}\nHora de impresión: ${formattedTime}\n\nPronóstico seleccionado:\n${pronosticos}\n\nSEC:\n#${hashCelular}\n\nRegistro:\n${hashTransaccion}\n\nPremios y Reglas\nPremio Mayor: Pronostica 12 aciertos\nSegundo Premio: Pronostica 11 aciertos\nTercer Premio: Pronostica 10 aciertos\n\nNota: Si no hay ganador, el premio se acumula.\nSi hay más de un ganador, el premio se divide entre los ganadores.\n\n¡GRACIAS POR PARTICIPAR!`;
+            downloadPng(text);
+        });
+        async function downloadPng(text) {
+            const now = new Date();
+            const formattedDate = now.toLocaleDateString('es-MX');
+            const formattedTime = now.toLocaleTimeString('es-MX');
+            const pronosticos = preview.textContent.split('\n')[0];
+            const hashCelular = preview.textContent.split('\n')[1];
+            const hashTransaccion = preview.textContent.split('\n')[2];
             const element = document.createElement('div');
             element.innerHTML = `
                <div style="width: 58mm; padding: 5px; box-sizing: border-box; font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0;background-color: #ffffff; color: #000000;">
@@ -583,60 +591,60 @@
             document.body.appendChild(element);
             try {
                 const canvas = await html2canvas(element, {
-                   backgroundColor: '#ffffff', // Color de fondo del canvas
-               });
-                 const image = canvas.toDataURL('image/png');
+                    backgroundColor: '#ffffff', // Color de fondo del canvas
+                });
+                const image = canvas.toDataURL('image/png');
                 const a = document.createElement('a');
-                 a.href = image;
-                 a.download = 'quiniela.png';
-                  a.style.display = 'none';
-                   document.body.appendChild(a);
-                    a.click();
-                  document.body.removeChild(a);
-             }
-              catch(error){
-                    console.log(`Error al convertir a imagen ${error}`);
-                    alert(`Error al convertir a imagen ${error}`)
-             }
-          finally {
-               document.body.removeChild(element);
-          }
+                a.href = image;
+                a.download = 'quiniela.png';
+                a.style.display = 'none';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+            catch (error) {
+                console.log(`Error al convertir a imagen ${error}`);
+                alert(`Error al convertir a imagen ${error}`)
+            }
+            finally {
+                document.body.removeChild(element);
+            }
         }
 
-         document.getElementById('random-button').addEventListener('click', () => {
+        document.getElementById('random-button').addEventListener('click', () => {
             matches.forEach((_, index) => {
                 const options = document.getElementsByName(`game${index}`);
-               const randomOption = Math.floor(Math.random() * options.length);
-                 options[randomOption].checked = true;
+                const randomOption = Math.floor(Math.random() * options.length);
+                options[randomOption].checked = true;
             });
         });
 
         walletButton.addEventListener('click', async () => {
-             if (window.ethereum) {
-                  try {
+            if (window.ethereum) {
+                try {
                     await window.ethereum.request({ method: 'eth_requestAccounts' });
-                      isWalletConnected = true;
+                    isWalletConnected = true;
                     walletButton.textContent = 'Cartera Conectada';
-                      alert('Cartera conectada con éxito.');
+                    alert('Cartera conectada con éxito.');
                 } catch (error) {
                     console.error('Error al conectar la cartera:', error);
-                   alert(`Error al conectar la cartera: ${error.message}`);
-               }
-          } else {
-               alert('Metamask no está instalado. Por favor, instálalo para continuar.');
-           }
+                    alert(`Error al conectar la cartera: ${error.message}`);
+                }
+            } else {
+                alert('Metamask no está instalado. Por favor, instálalo para continuar.');
+            }
         });
 
-       // Ejemplo de un Manejador de eventos en javascript (opcional)
+        // Ejemplo de un Manejador de eventos en javascript (opcional)
         const gameOptions = document.querySelectorAll('.game-option label');
 
-       gameOptions.forEach(label => {
-            label.addEventListener('click', function(e) {
-               // El evento ya se propaga por naturaleza
-               // puedes agregar logica extra aqui
-              // por ejemplo console.log(`Seleccionado ${e.target.textContent}`);
-          });
-       });
+        gameOptions.forEach(label => {
+            label.addEventListener('click', function (e) {
+                // El evento ya se propaga por naturaleza
+                // puedes agregar logica extra aqui
+                // por ejemplo console.log(`Seleccionado ${e.target.textContent}`);
+            });
+        });
     </script>
 </body>
 
